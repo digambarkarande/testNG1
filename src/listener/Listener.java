@@ -36,7 +36,6 @@ public class Listener extends NeoSBase implements ITestListener
 	public void onTestFailure(ITestResult result) {
 		
 		Reporter.log("Tc"+result.getName()+"is failed",true);
-		
 		try {
 			NeowsUtilty.Takescreenshot(driver,result.getName());
 		} catch (IOException e) {
